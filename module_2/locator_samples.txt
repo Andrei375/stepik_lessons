@@ -1,0 +1,5 @@
+#input-first-name
+//input[@name="input-last-name"]
+.form-control.input-phone
+//input[@data-type="email"]
+//input[@class="form-control input-phone"]
