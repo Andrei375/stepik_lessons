@@ -1,6 +1,6 @@
 from selenium import webdriver
 from sys import argv
-#import time
+# import time
 
 script_name, link = argv
 
@@ -22,7 +22,7 @@ try:
 
     # Проверяем, что смогли зарегистрироваться
     # ждем загрузки страницы
-    #time.sleep(1)
+    # time.sleep(1)
 
     # находим элемент, содержащий текст
     welcome_text_elt = browser.find_element_by_tag_name("h1")
@@ -34,6 +34,6 @@ try:
 
 finally:
     # ожидание чтобы визуально оценить результаты прохождения скрипта
-    #time.sleep(10)
+    # time.sleep(10)
     # закрываем браузер после всех манипуляций
     browser.quit()

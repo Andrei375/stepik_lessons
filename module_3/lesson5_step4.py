@@ -12,6 +12,12 @@ script_name, link = argv
 browser = webdriver.Chrome()
 browser.get(link)
 
+button1 = browser.find_element_by_css_selector('.btn.btn-primary')
+button1.click()
+
+confirm = browser.switch_to.alert
+confirm.accept()
+
 find_x = browser.find_element_by_id('input_value')
 x_value = int(find_x.text)
 y = calc(x_value)
@@ -19,15 +25,7 @@ y = calc(x_value)
 input_answer = browser.find_element_by_id('answer')
 input_answer.send_keys(y)
 
-check_checkbox = browser.find_element_by_id('robotCheckbox')
-check_checkbox.click()
-
 click_submit = browser.find_element_by_class_name('btn')
-browser.execute_script("return arguments[0].scrollIntoView(true);", click_submit)
-
-click_rbutton = browser.find_element_by_id('robotsRule')
-click_rbutton.click()
-
 click_submit.click()
 
-# python module_3/lesson4_step6.py http://SunInJuly.github.io/execute_script.html
+# python module_3/lesson5_step4.py http://suninjuly.github.io/alert_accept.html

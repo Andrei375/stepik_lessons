@@ -4,7 +4,7 @@ import math
 
 
 def calc(x):
-    return str(math.log(abs(12 * math.sin(int(x)))))  # ln(abs(12*sin(x)))
+    return str(math.log(abs(12 * math.sin(int(x)))))
 
 
 script_name, link = argv
