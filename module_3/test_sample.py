@@ -1,34 +1,43 @@
-# 1. Предусловия и настройка окружения (открытие браузера, установка дополнительных параметров);
-# 2. Сами шаги теста;
-# 3. Проверка на ожидаемый результат: например, на странице находится нужный текст или отображается соответствующий элемент
-# (а может, мы просто убеждаемся, что перешли на корректный URL, - все зависит от того, как вы описывали свои тесты);
-# 4. Пост-условия: например, закрытие браузера.
-# Скрипт описан в виде функции; название тестовой функции соответствует шагам и проверкам в ее теле
-# Скрипт использует концепцию ААА: блоки Arrange, Act, Assert визуально отделены друг от друга, содержимое блоков соответствует их названиям
-# Названия используемых переменных соответствуют их содержимому
-# Скрипт не содержит неиспользуемых переменных
-# Скрипт не содержит захардкоженных значений (либо должно быть пояснение, почему хардкод уместен в данном случае)
-# assert'ы содержат понятные и подробные сообщения о совершаемой проверке и ожидаемом результате
-
 from selenium import webdriver
 
-link1 = "http://selenium1py.pythonanywhere.com/ru/accounts/login/"
-link2 = "http://selenium1py.pythonanywhere.com/en-gb/accounts/logout/"
+login_page_link = "http://selenium1py.pythonanywhere.com/ru/accounts/login/"
+main_page_link = "http://selenium1py.pythonanywhere.com/en-gb/"
+input_login_locator = "#id_login-username"
+input_password_locator = "#id_login-password"
+welcom_icon_locator = ".alertinner"
+submit_login_and_password_button_locator = "[name='login_submit']"
 
-browser = webdriver.Chrome()
-browser.get(link1)
 
-input_name = browser.find_element_by_id('id_login-username')
-input_name.send_keys('kosmos09@tut.by')
+def test_login():
+    # Data
+    login = 'kosmos09@tut.by'
+    password = 'iXXeu22DPA4jv9Z'
+    search_text = 'Рады видеть вас снова'
 
-input_password = browser.find_element_by_id('id_login-password')
-input_password.send_keys('iXXeu22DPA4jv9Z')
+    try:
+        # Arrange
+        browser = webdriver.Chrome()
+        browser.implicitly_wait(5)
+        browser.get(login_page_link)
 
-click_submit = browser.find_element_by_name('login_submit')
-click_submit.click()
-# таким способом не получается сравнить страницу
-assert link2 == browser.window_handles[1]
+        # Act
+        input_login = browser.find_element_by_css_selector(input_login_locator)
+        input_login.send_keys(login)
 
-#browser.quit()
+        input_password = browser.find_element_by_css_selector(input_password_locator)
+        input_password.send_keys(password)
 
+        browser.find_element_by_css_selector(submit_login_and_password_button_locator).click()
+
+        # Assert
+        welcom_icon = browser.find_element_by_css_selector(welcom_icon_locator)
+        assert main_page_link == browser.current_url, \
+            "there is no transition to the main page after login"
+        assert search_text in welcom_icon.text, "failed welcom alert icon on the main page"
+
+    finally:
+        browser.quit()
+
+
+test_login()
 # python module_3\test_sample.py
