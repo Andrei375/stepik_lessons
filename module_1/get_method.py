@@ -31,3 +31,24 @@ time.sleep(5)
 
 # После выполнения всех действий мы не должны забыть закрыть окно браузера
 driver.quit()
+
+# Создадим виртуальное окружение:
+# python -m venv selenium_env
+# Запустим созданный для нас приложением venv файл activate.bat, чтобы активировать окружение:
+# selenium_env\Scripts\activate.bat
+# Деактивация окружения
+# selenium_env\Scripts\deactivate.bat
+# Запускаем интерпретатор Python
+# python
+# выход из интерпретатора
+# exit()
+# Устанавливаем Selenium
+# pip install selenium==3.14.0
+# Устанавливаем PyTest
+# pip install pytest==5.1.1
+# Запуск тестов через PyTest
+# pytest test_abs_project.py
+# Сохраняем все версии пакетов в специальный файл requirements.txt.
+# pip freeze > requirements.txt
+# Устанавливаем все пакеты в новом окружении одной командой!
+# pip install -r requirements.txt
