@@ -1,10 +1,33 @@
 import pytest
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
 
 def pytest_addoption(parser):
-    parser.addoption('--language', action='store', default=None,
+    parser.addoption('--language', action='store', default='en-gb',
                      help="Choose language: ru, en-gb, es or fr")
+
+
+@pytest.fixture(scope="function")
+def browser(request):
+    language = request.config.getoption("language")
+    options = Options()
+    if language == "ru":
+        print("\ncheck ru localisation..")
+        options.add_experimental_option('prefs', {'intl.accept_languages': 'ru'})
+    elif language == "en-GB":
+        print("\ncheck en-GB localisation..")
+        options.add_experimental_option('prefs', {'intl.accept_languages': 'en-GB'})
+    elif language == "es":
+        print("\ncheck es localisation..")
+        options.add_experimental_option('prefs', {'intl.accept_languages': 'es'})
+    elif language == "fr":
+        print("\ncheck fr localisation..")
+        options.add_experimental_option('prefs', {'intl.accept_languages': 'fr'})
+    browser = webdriver.Chrome(options=options)
+    yield browser
+    print("\nquit browser..")
+    browser.quit()
 
 
 @pytest.fixture(scope="function")
@@ -22,27 +45,3 @@ def text_in_btn_add_to_basket(request):
     elif language == "fr":
         print("\ncheck fr localisation..")
         return "Ajouter au panier"
-
-
-@pytest.fixture(scope="function")
-def browser(request):
-    language = request.config.getoption("language")
-    if language == "ru":
-        print("\ncheck ru localisation..")
-        link = "http://selenium1py.pythonanywhere.com/ru/catalogue/coders-at-work_207/"
-    elif language == "en-gb":
-        print("\ncheck en-gb localisation..")
-        link = "http://selenium1py.pythonanywhere.com/en-gb/catalogue/coders-at-work_207/"
-    elif language == "es":
-        print("\ncheck es localisation..")
-        link = "http://selenium1py.pythonanywhere.com/es/catalogue/coders-at-work_207/"
-    elif language == "fr":
-        print("\ncheck fr localisation..")
-        link = "http://selenium1py.pythonanywhere.com/fr/catalogue/coders-at-work_207/"
-    else:
-        raise pytest.UsageError("--language should be ru, en-gb, es or fr")
-    browser = webdriver.Chrome()
-    browser.get(link)  # в test_items.py не видно link, поэтому оставил здесь
-    yield browser
-    print("\nquit browser..")
-    browser.quit()
