@@ -42,7 +42,7 @@ def browser(request):
     else:
         raise pytest.UsageError("--language should be ru, en-gb, es or fr")
     browser = webdriver.Chrome()
-    browser.get(link)
+    browser.get(link)  # в test_items.py не видно link, поэтому оставил здесь
     yield browser
     print("\nquit browser..")
     browser.quit()

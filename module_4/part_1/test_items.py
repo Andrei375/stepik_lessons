@@ -2,6 +2,7 @@ btn_add_to_basket_locator = ".btn-add-to-basket"
 
 
 def test_check_is_btn_add_to_basket_in_recuired_language(browser, text_in_btn_add_to_basket):
+
     btn_add_to_basket = browser.find_element_by_css_selector(btn_add_to_basket_locator)
 
     assert btn_add_to_basket.text == text_in_btn_add_to_basket
