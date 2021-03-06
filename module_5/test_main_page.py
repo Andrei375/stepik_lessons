@@ -9,4 +9,8 @@ class TestMainPage:
         page.open()  # открываем страницу
         page.go_to_login_page()  # выполняем метод страницы - переходим на страницу логина
 
+    def test_guest_should_see_login_link(self, browser):
+        page = MainPage(browser, link)
+        page.open()
+        page.should_be_login_link()
 # pytest -v --tb=line --language=en-GB module_5\test_main_page.py
