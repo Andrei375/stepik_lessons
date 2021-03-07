@@ -13,4 +13,6 @@ class TestMainPage:
         page = MainPage(browser, link)
         page.open()
         page.should_be_login_link()
+
+# selenium_env\Scripts\activate.bat
 # pytest -v --tb=line --language=en-GB module_5\test_main_page.py
