@@ -12,3 +12,7 @@ class LoginPageLocators:
     INPUT_REGISTRATION_EMAIL = (By.CSS_SELECTOR, "#id_registration-email")
     INPUT_REGISTRATION_PASSWORD_1 = (By.CSS_SELECTOR, "#id_registration-password1")
     INPUT_REGISTRATION_PASSWORD_2 = (By.CSS_SELECTOR, "#id_registration-password2")
+
+
+class ProductPageLocators:
+    ADD_TO_BASKET = (By.CSS_SELECTOR, ".btn-add-to-basket")

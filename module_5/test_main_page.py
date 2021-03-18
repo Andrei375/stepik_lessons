@@ -19,3 +19,4 @@ class TestMainPage:
 
 # selenium_env\Scripts\activate.bat
 # pytest -v --tb=line --language=en-GB module_5\test_main_page.py
+# allure generate -c -o module_5\allure_report module_5\allure_result
