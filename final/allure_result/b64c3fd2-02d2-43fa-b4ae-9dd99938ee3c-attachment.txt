@@ -1,0 +1,5 @@
+
+start chrome browser for test..
+The second alert is no presented
+
+quit browser..

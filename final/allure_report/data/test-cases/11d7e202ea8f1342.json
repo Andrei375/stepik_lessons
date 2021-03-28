@@ -1,0 +1,126 @@
+{
+  "uid" : "11d7e202ea8f1342",
+  "name" : "test_register_new_user",
+  "fullName" : "final.test_main_page.TestInputFromMainPage#test_register_new_user",
+  "historyId" : "1dab6d394bb76d8651cb1bf349dd4683",
+  "time" : {
+    "start" : 1616963077495,
+    "stop" : 1616963088403,
+    "duration" : 10908
+  },
+  "status" : "skipped",
+  "statusMessage" : "XFAIL\n\nAssertionError: Register form is not presented",
+  "statusTrace" : "self = <final.test_main_page.TestInputFromMainPage object at 0x000001433B1F6A00>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"42f8d5a3de15c8c58dd81c614f876332\")>\n\n    @pytest.mark.xfail\n    def test_register_new_user(self, browser):\n        # Data\n        email = str(time.time()) + \"@tut.by\"\n        password = \"iXXeu22DPA4jv9Z\"\n        # Act\n        page = LoginPage(browser, link)\n        page.open()\n        # Assert\n>       page.should_be_register_form()\n\nfinal\\test_main_page.py:73: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <final.pages.login_page.LoginPage object at 0x000001433B1FFF40>\n\n    def should_be_register_form(self):\n        # Assert\n>       assert self.is_element_present(*LoginPageLocators.REGISTER_FORM), \"Register form is not presented\"\nE       AssertionError: Register form is not presented\n\nfinal\\pages\\login_page.py:25: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1616963070121,
+      "stop" : 1616963077494,
+      "duration" : 7373
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "browser",
+    "time" : {
+      "start" : 1616963068309,
+      "stop" : 1616963070120,
+      "duration" : 1811
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "skipped",
+    "statusMessage" : "XFAIL\n\nAssertionError: Register form is not presented",
+    "statusTrace" : "self = <final.test_main_page.TestInputFromMainPage object at 0x000001433B1F6A00>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"42f8d5a3de15c8c58dd81c614f876332\")>\n\n    @pytest.mark.xfail\n    def test_register_new_user(self, browser):\n        # Data\n        email = str(time.time()) + \"@tut.by\"\n        password = \"iXXeu22DPA4jv9Z\"\n        # Act\n        page = LoginPage(browser, link)\n        page.open()\n        # Assert\n>       page.should_be_register_form()\n\nfinal\\test_main_page.py:73: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <final.pages.login_page.LoginPage object at 0x000001433B1FFF40>\n\n    def should_be_register_form(self):\n        # Assert\n>       assert self.is_element_present(*LoginPageLocators.REGISTER_FORM), \"Register form is not presented\"\nE       AssertionError: Register form is not presented\n\nfinal\\pages\\login_page.py:25: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "708260ed1685afa8",
+      "name" : "stdout",
+      "source" : "708260ed1685afa8.txt",
+      "type" : "text/plain",
+      "size" : 49
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1616963088606,
+      "stop" : 1616963092268,
+      "duration" : 3662
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.xfail"
+  }, {
+    "name" : "tag",
+    "value" : "personal_tests"
+  }, {
+    "name" : "parentSuite",
+    "value" : "final"
+  }, {
+    "name" : "suite",
+    "value" : "test_main_page"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestInputFromMainPage"
+  }, {
+    "name" : "host",
+    "value" : "andreihp4525s"
+  }, {
+    "name" : "thread",
+    "value" : "3024-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "final.test_main_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.xfail", "personal_tests" ]
+  },
+  "source" : "11d7e202ea8f1342.json",
+  "parameterValues" : [ ]
+}

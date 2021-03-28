@@ -1,0 +1,387 @@
+{
+  "2abdb583929057893c992532a427bd85" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "27301e80208cfbaf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1616963220512,
+        "stop" : 1616963224213,
+        "duration" : 3701
+      }
+    } ]
+  },
+  "c6b477140c19ed06013a66fd42477a65" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "35c310f6cf592745",
+      "status" : "passed",
+      "time" : {
+        "start" : 1616963031210,
+        "stop" : 1616963033847,
+        "duration" : 2637
+      }
+    } ]
+  },
+  "c6bd7526eadc2a917d2e6d90a8964352" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e771d356803262da",
+      "status" : "passed",
+      "time" : {
+        "start" : 1616963064386,
+        "stop" : 1616963065856,
+        "duration" : 1470
+      }
+    } ]
+  },
+  "a9bad91a1a1bdea6f2869b3e88dd6a1f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "584b2c7f8e76986a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1616963184855,
+        "stop" : 1616963188952,
+        "duration" : 4097
+      }
+    } ]
+  },
+  "c5ba3583133f77c4fa64e89fd1bd3654" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7904b7df93f12e3a",
+      "status" : "skipped",
+      "statusDetails" : "XFAIL\n\nAssertionError: Success message presents, but should not be",
+      "time" : {
+        "start" : 1616963229565,
+        "stop" : 1616963234462,
+        "duration" : 4897
+      }
+    } ]
+  },
+  "d35bf59f95cba3d656b543753a5f6fdd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "272acbf43cef4198",
+      "status" : "passed",
+      "time" : {
+        "start" : 1616963022211,
+        "stop" : 1616963026754,
+        "duration" : 4543
+      }
+    } ]
+  },
+  "7eb636752446174a666a624433e175cf" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "26bfb39462185f4f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1616963209803,
+        "stop" : 1616963215348,
+        "duration" : 5545
+      }
+    } ]
+  },
+  "58f2e0dc8525af0f5967a8edd8f22546" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "db38098705da61af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1616963193288,
+        "stop" : 1616963196833,
+        "duration" : 3545
+      }
+    } ]
+  },
+  "1dab6d394bb76d8651cb1bf349dd4683" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "11d7e202ea8f1342",
+      "status" : "skipped",
+      "statusDetails" : "XFAIL\n\nAssertionError: Register form is not presented",
+      "time" : {
+        "start" : 1616963077495,
+        "stop" : 1616963088403,
+        "duration" : 10908
+      }
+    } ]
+  },
+  "9f2314cafe851ffa4b89eec1c0fc0438" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "11e731dfd15e210d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1616963148975,
+        "stop" : 1616963153286,
+        "duration" : 4311
+      }
+    } ]
+  },
+  "d83e8b4e30d4834dce5fb653d320215d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "be3b319e6ee97945",
+      "status" : "skipped",
+      "statusDetails" : "XFAIL\n\nAssertionError: Product name is not correct",
+      "time" : {
+        "start" : 1616963201960,
+        "stop" : 1616963205533,
+        "duration" : 3573
+      }
+    } ]
+  },
+  "7bff1959df49be731b552f98d3033313" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ba147882fbddbe96",
+      "status" : "passed",
+      "time" : {
+        "start" : 1616963176006,
+        "stop" : 1616963179645,
+        "duration" : 3639
+      }
+    } ]
+  },
+  "145380196dd687d21bef9a1b2ab30e95" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b9e5b6600814757c",
+      "status" : "skipped",
+      "statusDetails" : "XFAIL\n\nAssertionError: Register form is not presented",
+      "time" : {
+        "start" : 1616963101934,
+        "stop" : 1616963112774,
+        "duration" : 10840
+      }
+    } ]
+  },
+  "8fd9206e00b7948b446c44c8c262a8ee" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "410278c51e360ca9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1616963257445,
+        "stop" : 1616963271381,
+        "duration" : 13936
+      }
+    } ]
+  },
+  "d714f8b471813dcac2ed0eca5598f179" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d9d1e5047bb9c13d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1616963038167,
+        "stop" : 1616963051889,
+        "duration" : 13722
+      }
+    } ]
+  },
+  "b7424e2740f29cce34a4e414596aa79d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b93cbf990bdf3e80",
+      "status" : "skipped",
+      "statusDetails" : "XFAIL\n\nAssertionError: Login text input in login form  is not presented",
+      "time" : {
+        "start" : 1616963125230,
+        "stop" : 1616963136081,
+        "duration" : 10851
+      }
+    } ]
+  },
+  "c0d9907098bec605c81b58d116b19e8b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "901818b6d48a77d7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1616963168060,
+        "stop" : 1616963171602,
+        "duration" : 3542
+      }
+    } ]
+  },
+  "ba8d8ffe7d5bf479bb1ecb1aab399eb5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "600f4b26ea6df1a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1616963158096,
+        "stop" : 1616963161677,
+        "duration" : 3581
+      }
+    } ]
+  },
+  "6eddb05cff3f3e3792cf8a4a5f634972" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a99c7de4eb0629e9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1616963140618,
+        "stop" : 1616963144118,
+        "duration" : 3500
+      }
+    } ]
+  },
+  "cd7c86e12bf4bad419661995813fd164" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "27bfe379dbe85111",
+      "status" : "passed",
+      "time" : {
+        "start" : 1616963240043,
+        "stop" : 1616963253231,
+        "duration" : 13188
+      }
+    } ]
+  }
+}

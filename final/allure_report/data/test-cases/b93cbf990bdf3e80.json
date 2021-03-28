@@ -1,0 +1,126 @@
+{
+  "uid" : "b93cbf990bdf3e80",
+  "name" : "test_user_login",
+  "fullName" : "final.test_main_page.TestInputFromMainPage#test_user_login",
+  "historyId" : "b7424e2740f29cce34a4e414596aa79d",
+  "time" : {
+    "start" : 1616963125230,
+    "stop" : 1616963136081,
+    "duration" : 10851
+  },
+  "status" : "skipped",
+  "statusMessage" : "XFAIL\n\nAssertionError: Login text input in login form  is not presented",
+  "statusTrace" : "self = <final.test_main_page.TestInputFromMainPage object at 0x000001433B243EE0>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"06b7424515ade3d744c40f134cad0d1f\")>\n\n    @pytest.mark.xfail\n    def test_user_login(self, browser):\n        # Data\n        email = \"kosmos09@tut.by\"\n        password = \"0iXXeu22DPA4jv9Z\"\n        # Act\n        page = LoginPage(browser, link)\n        page.open()\n        # Assert\n>       page.should_be_login_form()\n\nfinal\\test_main_page.py:98: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <final.pages.login_page.LoginPage object at 0x000001433B205E50>\n\n    def should_be_login_form(self):\n        # Assert\n>       assert self.is_element_present(*LoginPageLocators.INPUT_LOGIN_USERNAME), \\\n            \"Login text input in login form  is not presented\"\nE       AssertionError: Login text input in login form  is not presented\n\nfinal\\pages\\login_page.py:18: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1616963117131,
+      "stop" : 1616963125228,
+      "duration" : 8097
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "browser",
+    "time" : {
+      "start" : 1616963115341,
+      "stop" : 1616963117131,
+      "duration" : 1790
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "skipped",
+    "statusMessage" : "XFAIL\n\nAssertionError: Login text input in login form  is not presented",
+    "statusTrace" : "self = <final.test_main_page.TestInputFromMainPage object at 0x000001433B243EE0>\nbrowser = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"06b7424515ade3d744c40f134cad0d1f\")>\n\n    @pytest.mark.xfail\n    def test_user_login(self, browser):\n        # Data\n        email = \"kosmos09@tut.by\"\n        password = \"0iXXeu22DPA4jv9Z\"\n        # Act\n        page = LoginPage(browser, link)\n        page.open()\n        # Assert\n>       page.should_be_login_form()\n\nfinal\\test_main_page.py:98: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <final.pages.login_page.LoginPage object at 0x000001433B205E50>\n\n    def should_be_login_form(self):\n        # Assert\n>       assert self.is_element_present(*LoginPageLocators.INPUT_LOGIN_USERNAME), \\\n            \"Login text input in login form  is not presented\"\nE       AssertionError: Login text input in login form  is not presented\n\nfinal\\pages\\login_page.py:18: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "731723be0bebed49",
+      "name" : "stdout",
+      "source" : "731723be0bebed49.txt",
+      "type" : "text/plain",
+      "size" : 49
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1616963136097,
+      "stop" : 1616963138689,
+      "duration" : 2592
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.xfail"
+  }, {
+    "name" : "tag",
+    "value" : "personal_tests"
+  }, {
+    "name" : "parentSuite",
+    "value" : "final"
+  }, {
+    "name" : "suite",
+    "value" : "test_main_page"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestInputFromMainPage"
+  }, {
+    "name" : "host",
+    "value" : "andreihp4525s"
+  }, {
+    "name" : "thread",
+    "value" : "3024-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "final.test_main_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.xfail", "personal_tests" ]
+  },
+  "source" : "b93cbf990bdf3e80.json",
+  "parameterValues" : [ ]
+}

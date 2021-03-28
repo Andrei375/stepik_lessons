@@ -1,11 +1,12 @@
-from pages.main_page import MainPage
-from pages.product_page import ProductPage
-from pages.basket_page import BasketPage
-from pages.login_page import LoginPage
 import pytest
 import time
+from final.pages.main_page import MainPage
+from final.pages.product_page import ProductPage
+from final.pages.basket_page import BasketPage
+from final.pages.login_page import LoginPage
 
-link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=newYear2019" # "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209"
+
+link = "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209"
 
 
 class TestProductPage:
@@ -53,8 +54,8 @@ class TestUserAddToBasketFromProductPage():
 
     @pytest.fixture(scope="function", autouse=True)
     def setup(self, browser):
-        email = str(time.time()) + "@wrongmail.org"
-        password = "Qwaszx@123"
+        email = str(time.time()) + "@tut.by"
+        password = "iXXeu22DPA4jv9Z"
 
         page = LoginPage(browser, link)
         page.open()
@@ -64,19 +65,6 @@ class TestUserAddToBasketFromProductPage():
 
         page.should_be_authorized_user()
 
-    def test_user_cant_see_success_message(self, browser):
-        page = ProductPage(browser, link)
-        page.open()
-
-        page.should_not_be_success_message()
-
-    def test_user_can_add_product_to_basket(self, browser):
-        page = ProductPage(browser, link)
-        page.open()
-
-        page.add_to_basket()
-
-        page.should_be_correct_product_in_basket()
 
 # selenium_env\Scripts\activate.bat
-# pytest -s module_5\test_product_page.py
+# pytest --browser_name=chrome --language=en-GB final
